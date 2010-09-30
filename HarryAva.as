@@ -106,7 +106,7 @@ private var myShadow:DropShadowFilter;
 				addChild(save_text);
 			
 			var buttons_array:Array = new Array();
-				var bn:int = 26;
+				var bn:int = 30;
 			
 			buttons_array[1] = new button(300, 80, serv, "Hogwarts-web_s.jpg", "Hogwarts-web.jpg");
 			buttons_array[2] = new button(300, 130, serv, "5472045_s.png", "5472045.png");
@@ -138,11 +138,11 @@ private var myShadow:DropShadowFilter;
 			buttons_array[24] = new button(500, 230, serv, "bay_s.png", "bay.png");
 			buttons_array[25] = new button(500, 280, serv, "bay_s.png", "bay.png");
 			
-			buttons_array[26] = new button(550, 150, serv, "bay_s.png", "bay.png");
-			buttons_array[27] = new button(550, 200, serv, "bay_s.png", "bay.png");
-			buttons_array[28] = new button(550, 250, serv, "bay_s.png", "bay.png");
-			buttons_array[29] = new button(550, 300, serv, "bay_s.png", "bay.png");
-			buttons_array[30] = new button(550, 350, serv, "bay_s.png", "bay.png");	
+			buttons_array[26] = new button(550, 80, serv, "bay_s.png", "bay.png");
+			buttons_array[27] = new button(550, 130, serv, "bay_s.png", "bay.png");
+			buttons_array[28] = new button(550, 180, serv, "bay_s.png", "bay.png");
+			buttons_array[29] = new button(550, 230, serv, "bay_s.png", "bay.png");
+			buttons_array[30] = new button(550, 280, serv, "bay_s.png", "bay.png");	
 		
 			for (var ii:int = 1; ii <= bn; ii++) {
 				addChild(buttons_array[ii]);
