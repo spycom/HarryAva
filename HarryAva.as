@@ -33,7 +33,7 @@ private var myShadow:DropShadowFilter;
 		public function onAddedToStage(e: Event): void {
     			wrapper = Object(this.parent.parent);
     			 
-    			serv = "http://dl.dropbox.com/u/6044249/harry/";
+    			serv = "http://high.dih.ru/HarryAva/";
     		var context:LoaderContext = new LoaderContext();
 				context.checkPolicyFile = true;
 			
@@ -55,7 +55,7 @@ private var myShadow:DropShadowFilter;
 				addChild(back_sprite);
 				
 			var background:Loader = new Loader();
-				background.load(new URLRequest("http://dl.dropbox.com/u/6044249/harry/backgr.jpg"));		
+				background.load(new URLRequest("http://high.dih.ru/HarryAva/backgr2.jpg"));		
 				addChild(background);
 			/*	
 			var logo:Loader = new Loader();
@@ -69,7 +69,7 @@ private var myShadow:DropShadowFilter;
 				 
 				 
 			// ----------------------------------------------------------- /////////////
-			var version:text = new text(340, 50, "Version .002 alpha", "1");
+			var version:text = new text(340, 50, "Version .004 alpha", "1");
 				addChild(version);
 			// -----------------------------------------------------------////////////////
 			
@@ -122,36 +122,36 @@ private var myShadow:DropShadowFilter;
 			
 			buttons_array[11] = new button(400, 80, serv, "beauxbatons_s.png", "beauxbatons.png");
 			buttons_array[12] = new button(400, 130, serv, "durmstrang_s.jpg", "durmstrang.jpg");
-			buttons_array[13] = new button(400, 180, serv, "bay_s.png", "bay.png");
-			buttons_array[14] = new button(400, 230, serv, "bay_s.png", "bay.png");
-			buttons_array[15] = new button(400, 280, serv, "bay_s.png", "bay.png");
+			buttons_array[13] = new button(400, 180, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[14] = new button(400, 230, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[15] = new button(400, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
 			
 			buttons_array[16] = new button(450, 80, serv, "images_s.jpeg", "images.jpeg");
 			buttons_array[17] = new button(450, 130, serv, "images2_s.jpeg", "images2.jpeg");
 			buttons_array[18] = new button(450, 180, serv, "hogwarts05a_s.jpg", "hogwarts05a.jpg");
 			buttons_array[19] = new button(450, 230, serv, "hogwarts07b_s.jpg", "hogwarts07b.jpg");
-			buttons_array[20] = new button(450, 280, serv, "bay_s.png", "bay.png");
+			buttons_array[20] = new button(450, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
 			
 			buttons_array[21] = new button(500, 80, serv, "hogwarts-thumb_s.jpg", "hogwarts-thumb.jpg");
-			buttons_array[22] = new button(500, 130, serv, "bay_s.png", "bay.png");	
-			buttons_array[23] = new button(500, 180, serv, "bay_s.png", "bay.png");
-			buttons_array[24] = new button(500, 230, serv, "bay_s.png", "bay.png");
-			buttons_array[25] = new button(500, 280, serv, "bay_s.png", "bay.png");
+			buttons_array[22] = new button(500, 130, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");	
+			buttons_array[23] = new button(500, 180, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[24] = new button(500, 230, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[25] = new button(500, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
 			
-			buttons_array[26] = new button(550, 80, serv, "bay_s.png", "bay.png");
-			buttons_array[27] = new button(550, 130, serv, "bay_s.png", "bay.png");
-			buttons_array[28] = new button(550, 180, serv, "bay_s.png", "bay.png");
-			buttons_array[29] = new button(550, 230, serv, "bay_s.png", "bay.png");
-			buttons_array[30] = new button(550, 280, serv, "bay_s.png", "bay.png");	
+			buttons_array[26] = new button(550, 80, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[27] = new button(550, 130, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[28] = new button(550, 180, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[29] = new button(550, 230, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[30] = new button(550, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");	
 		
 			for (var ii:int = 1; ii <= bn; ii++) {
 				addChild(buttons_array[ii]);
 			}
 				
 		// запрос аватарки		 
-		var api_id:String = "1955614";
+		var api_id:String = "1962122";
 		var viewer_id = stage.loaderInfo.parameters.viewer_id;
-		var api_secret:String = 'kMqXujL3CT';
+		var api_secret:String = 'd9jgtIEQYw';
 		var test_mode:Number = 1;
 	
 		var methodFromAPI = "getProfiles";
@@ -198,9 +198,9 @@ private var myShadow:DropShadowFilter;
 			
 		public function saveClickEvent(e:MouseEvent):void {
 			
-			var api_id:String = "1955614";
+			var api_id:String = "1962122";
 		var viewer_id = stage.loaderInfo.parameters.viewer_id;
-		var api_secret:String = 'kMqXujL3CT';
+		var api_secret:String = 'd9jgtIEQYw';
 		var test_mode:Number = 0;
 	
 		var methodFromAPI = "photos.getProfileUploadServer";
@@ -237,11 +237,13 @@ private var myShadow:DropShadowFilter;
 			var answer= new XML(e.target.data);
 			save_text.setText("server load");
 			
-			var raw:BitmapData = new BitmapData(stage.width, stage.height+50);
+			var raw:BitmapData = new BitmapData(stage.width, stage.height);
+			//save_text.setText("error 1");
 				raw.draw(stage);
-				
+			save_text.setText("error 2");	
+			
 			var newPhoto:BitmapData = new BitmapData(200, 500);
-				newPhoto.copyPixels(raw, new Rectangle(30, 35, 200, 500), new Point(0, 0));
+				newPhoto.copyPixels(raw, new Rectangle(30, 25, 200, 500), new Point(0, 0));
 			
       		var brr:ByteArray = PNGEncoder.encode(newPhoto);
       		
@@ -262,9 +264,9 @@ private var myShadow:DropShadowFilter;
 			
 			
 			
-      		var api_id:String = "1955614";
+      		var api_id:String = "1962122";
 		var viewer_id = stage.loaderInfo.parameters.viewer_id;
-		var api_secret:String = 'kMqXujL3CT';
+		var api_secret:String = 'd9jgtIEQYw';
 		var test_mode:Number = 1;
 			
 		request = new URLRequest(answer.upload_url.text());
@@ -299,9 +301,9 @@ private var myShadow:DropShadowFilter;
 			
 			//save_text.setText(e.target.data);
 			
-			var api_id:String = "1955614";
+			var api_id:String = "1962122";
 			var viewer_id = stage.loaderInfo.parameters.viewer_id;
-			var api_secret:String = 'kMqXujL3CT';
+			var api_secret:String = 'd9jgtIEQYw';
 			var test_mode:Number = 1;
 	
 			var methodFromAPI = "photos.saveProfilePhoto";
