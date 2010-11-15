@@ -23,6 +23,7 @@ public var wrapper: Object;
 public var serv:String;
 private var save_button:Sprite;
 private var myShadow:DropShadowFilter;
+public var background:Loader;
 
 		public function HarryAva() {
 			
@@ -54,22 +55,24 @@ private var myShadow:DropShadowFilter;
 			back_sprite.graphics.drawRect(0, 0, 640, 550);
 				addChild(back_sprite);
 				
-			var background:Loader = new Loader();
-				background.load(new URLRequest("http://high.dih.ru/HarryAva/backgr2.jpg"));		
+			background = new Loader();
+				background.load(new URLRequest("http://high.dih.ru/HarryAva/backgr2.jpg"), context);		
 				addChild(background);
-			/*	
+				
 			var logo:Loader = new Loader();
-				logo.load(new URLRequest(serv +"Logo.png"), context);
-				logo.x = 240;
-				logo.y = 15;
+				logo.load(new URLRequest(serv + "harrypotter_logo.png"), context);
+				logo.x = 260;
+				logo.y = 5;
+				logo.scaleX = 0.5;
+				logo.scaleY = 0.4;
 				logo.filters = [myShadow2];
-				//addChild(logo);
-				 * 
-				 */
+				addChild(logo);
+				 
+				 
 				 
 				 
 			// ----------------------------------------------------------- /////////////
-			var version:text = new text(340, 50, "Version .004 alpha", "1");
+			var version:text = new text(585, 50, "version .01.3b", "1");
 				addChild(version);
 			// -----------------------------------------------------------////////////////
 			
@@ -108,46 +111,49 @@ private var myShadow:DropShadowFilter;
 			var buttons_array:Array = new Array();
 				var bn:int = 30;
 			
+			
 			buttons_array[1] = new button(300, 80, serv, "Hogwarts-web_s.jpg", "Hogwarts-web.jpg");
 			buttons_array[2] = new button(300, 130, serv, "5472045_s.png", "5472045.png");
-			buttons_array[3] = new button(300, 180, serv, "5472045_s.png", "5472045.png");
+			buttons_array[3] = new button(300, 180, serv, "images_s.jpeg", "images.jpeg");
 			buttons_array[4] = new button(300, 230, serv, "web2_s.gif", "web2.gif");
 			buttons_array[5] = new button(300, 280, serv, "Griffindor_s.jpg", "Griffindor.jpg");
 			
 			buttons_array[6] = new button(350, 80, serv, "1-web_s.jpg", "1-web.jpg");
 			buttons_array[7] = new button(350, 130, serv, "Ravenclaw-web_s.jpg", "Ravenclaw-web.jpg");
 			buttons_array[8] = new button(350, 180,	serv, "Slytherin-web_s.jpg", "Slytherin-web.jpg");
-			buttons_array[9] = new button(350, 230, serv, "hogwarts_s.jpg", "hogwarts.jpg");
+			buttons_array[9] = new button(350, 230, serv, "hogwarts_s.jpg", "hogwarts.JPG");
 			buttons_array[10] = new button(350, 280, serv, "mini-poster_s.jpg", "mini-poster.jpg");
 			
 			buttons_array[11] = new button(400, 80, serv, "beauxbatons_s.png", "beauxbatons.png");
 			buttons_array[12] = new button(400, 130, serv, "durmstrang_s.jpg", "durmstrang.jpg");
-			buttons_array[13] = new button(400, 180, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[14] = new button(400, 230, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[13] = new button(400, 180, serv, "11320189_gal_s.jpg", "11320189_gal.jpg");
+			buttons_array[14] = new button(400, 230, serv, "hogwarts-thumb_s.jpg", "hogwarts-thumb.jpg");
 			buttons_array[15] = new button(400, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
 			
-			buttons_array[16] = new button(450, 80, serv, "images_s.jpeg", "images.jpeg");
+			buttons_array[16] = new button(450, 80, serv, "hogwarts07b_s.jpg", "hogwarts07b.jpg");
 			buttons_array[17] = new button(450, 130, serv, "images2_s.jpeg", "images2.jpeg");
 			buttons_array[18] = new button(450, 180, serv, "hogwarts05a_s.jpg", "hogwarts05a.jpg");
-			buttons_array[19] = new button(450, 230, serv, "hogwarts07b_s.jpg", "hogwarts07b.jpg");
-			buttons_array[20] = new button(450, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[19] = new button(450, 230, serv, "11285793_gal_s.jpg", "11285793_gal.jpg");
+			buttons_array[20] = new button(450, 280, serv, "11285791_gal_s.jpg", "11285791_gal.jpg");
 			
-			buttons_array[21] = new button(500, 80, serv, "hogwarts-thumb_s.jpg", "hogwarts-thumb.jpg");
-			buttons_array[22] = new button(500, 130, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");	
-			buttons_array[23] = new button(500, 180, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[24] = new button(500, 230, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[25] = new button(500, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
+			buttons_array[21] = new button(500, 80, serv, "11285774_gal_s.jpg", "11285774_gal.jpg");
+			buttons_array[22] = new button(500, 130, serv, "11285776_gal_s.jpg", "11285776_gal.jpg");	
+			buttons_array[23] = new button(500, 180, serv, "11285779_gal_s.jpg", "11285779_gal.jpg");
+			buttons_array[24] = new button(500, 230, serv, "11285784_gal_s.jpg", "11285784_gal.jpg");
+			buttons_array[25] = new button(500, 280, serv, "11285785_gal_s.jpg", "11285785_gal.jpg");
 			
-			buttons_array[26] = new button(550, 80, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[27] = new button(550, 130, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[28] = new button(550, 180, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[29] = new button(550, 230, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");
-			buttons_array[30] = new button(550, 280, serv, "hp_dh_banner_s.jpg", "hp_dh_banner.jpg");	
+			buttons_array[26] = new button(550, 80, serv, "character-dobby_s.jpg", "character-dobby.jpg");
+			buttons_array[27] = new button(550, 130, serv, "Movie-Poster_s.jpg", "Movie-Poster.jpg");
+			buttons_array[28] = new button(550, 180, serv, "part-i-poster_s.jpg", "part-i-poster.jpg");
+			buttons_array[29] = new button(550, 230, serv, "11285786_gal_s.jpg", "11285786_gal.jpg");
+			buttons_array[30] = new button(550, 280, serv, "11285789_gal_s.jpg", "11285789_gal.jpg");	
 		
 			for (var ii:int = 1; ii <= bn; ii++) {
 				addChild(buttons_array[ii]);
 			}
 				
+				 
+				 
 		// запрос аватарки		 
 		var api_id:String = "1962122";
 		var viewer_id = stage.loaderInfo.parameters.viewer_id;
@@ -192,7 +198,7 @@ private var myShadow:DropShadowFilter;
 			user_photo.x = 30;
 			user_photo.y = 25;
 			//user_photo.addEventListener(MouseEvent.CLICK, doit);
-			addChildAt(user_photo, 4);
+			addChildAt(user_photo, 5);
 			
 			}
 			
@@ -239,6 +245,7 @@ private var myShadow:DropShadowFilter;
 			
 			var raw:BitmapData = new BitmapData(stage.width, stage.height);
 			//save_text.setText("error 1");
+				//raw.draw(background);
 				raw.draw(stage);
 			save_text.setText("error 2");	
 			
